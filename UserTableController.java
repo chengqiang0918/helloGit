@@ -19,7 +19,7 @@ public class UserTableController {
 
     @RequestMapping(value = "/view",method = RequestMethod.GET)
     @ResponseBody
-    public   List<UserTable> findAll(Model model){
+    public   List<UserTable> findAll(){
         List<UserTable> userTables=userService.findAll();
         //model.addAttribute("userTables",userTables);
         return userTables;
